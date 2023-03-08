@@ -1,0 +1,132 @@
+/*Formato de secciones*/
+
+html,body,header,footer,
+hgroup,nav,article,section,figure,figcaption,h1,
+h2,h3,ul,li,body,div,p,img {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+/*Formato seccion unete*/
+.unetef{
+    font-family: 'Tilt Neon', cursive;
+    font: bold;
+    font-size: larger;
+    color: rgb(113, 94, 102);
+    text-align: center;
+}
+/*Formato seccion unete*/
+.unete{
+    color: white;
+    text-align: center;
+    font-family: 'Tilt Neon', cursive;
+    background-color: rgb(113, 94, 102);
+    font-size: 3rem;
+}
+/*Formato seccion contactanos*/
+.contactanoss{
+    color: white;
+    background-color: rgb(113, 94, 102);
+    text-align: center;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 2rem;
+}
+/*Formato seccion ubicacion*/
+.ubi{
+    color: white;
+    background-color: rgb(113, 94, 102);
+    text-align: center;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 2rem;
+}
+/*Formato navegador general*/
+.nav1{
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(236, 227, 238);
+    padding: 0.25em;
+}
+/*Formato navegador pagina*/
+.nav2{
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: 'Tilt Neon', cursive;
+    background-color: rgb(141, 116, 125);
+    padding: 0.25em;
+}
+/*Formato navegador todos*/
+nav ul li{
+    list-style: none;
+    display: inline;
+}
+
+nav a{
+    padding: 0.25em;
+}
+
+a:link{
+    font-weight: bold;
+    color: white;
+}
+
+a:visited{
+    color: rgb(100, 79, 122);
+}
+
+a:hover{
+    background-color: rgb(234,200,202);
+}
+
+/*formato main*/
+main{
+    font-size: 200%;
+    font: bold;
+    color: white;
+    background-color: rgb(241, 226, 219);
+    margin-top: 1em;
+    margin-right: 4em;
+    margin-bottom: 1em;
+    margin-left: 4em;
+    padding: 0.5em;
+}
+/*formato body*/
+body {
+    font-family: Georgia, Cambria, "Times New Roman",serif;
+    font-size: 100%;
+    background-color: rgb(241, 226, 219);
+}
+/*Formato seccion ubicacion*/
+.Ubicacion{
+    text-align: center;
+}
+/*Formato seccion finanzas*/
+.fin{
+    background-color: rgb(113, 94, 102);
+    text-align: center;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 2rem;
+}
+
+.Finanzas{
+    background-image: url(../images/recept.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 300px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: 'Sono', sans-serif;
+}
+/*Color linea final*/
+.linea{
+    color: rgb(113, 94, 102);
+}
+/*Formato footer*/
+.footer{
+    color: rgb(113, 94, 102);
+    text-align: center;
+}
+

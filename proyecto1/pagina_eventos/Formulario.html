@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Se pone un titulo de pagina-->
+    <title>Formulario</title>
+    <!--Se hace la conexion a los estilos-->
+    <link rel="stylesheet" href="Style/Form.css">
+    <!--Se agrega el icono de la pagina-->
+    <link rel="shortcut icon" href="Images/icon.ico" type="images/icon.ico">
+</head>
+
+<body>
+    <!--Se crea una barra de navegacion la cual va a redirigir a la pagina deseada-->
+    <nav class="nav1">
+        <a href="   "> Menú</a>
+        <a href="">Rewards</a>
+        <img src="Images/FINAL.png" alt="InicipPolibucks" width="200" height="200">
+        <a href="Pagina2.html">Eventos</a>
+        <a href="  ">Nosotros</a>
+    </nav>
+    <header>
+        <!--Se pone un encabezado-->
+        <h1>Formulario de Registro</h1>
+    </header>
+    <!--Contenido principal-->
+    <main class="signupFrm">
+        <!--Se inicia el formaulario ccon un metodo post-->
+        <form method="post" class="form">
+            <h2 class="title">Regístro</h2>
+            <!--Secciones que agrupan los requerimientos-->
+            <section class="inputContainer">
+                <h5>Nombre:</h5>
+                <!--Un input de tipo texto recibe texto-->
+                <input type="text" name="nombre" class="input" maxlength="50" required>
+            </section>
+
+            <section class="inputContainer">
+                <h5>Apellidos:</h5>
+                <input type="text" name="apellidos" class="input" maxlength="50" required>
+            </section>
+
+            <section class="inputContainer">
+                <h5>Sexo
+                    <!--Input de tipo radio  en el cula solo se puede seleccionar uno de los doa-->
+                    <input type="radio" name="sexo" value="m"> Mujer
+                    <input type="radio" name="sexo" value="h"> Hombre
+                </h5>
+            </section>
+
+            <section class="inputContainer">
+                <h5>Correo</h5>
+                <!--Al ser de tipo email forzosamente debe de tener un formato de correo-->
+                <input type="email" name="correo" maxlength="50" required class="input">
+            </section>
+
+            <section class="inputContainer">
+                <h5>Intereses
+                <!--Se crea una datalist para ello se nesecita que el input tenga el mismo nombre que la datalist-->
+                <input list="Eventos">
+                <datalist id="Eventos">
+                    <option value="Dia de la Mujer"></option>
+                    <option value="Hola Primavera"></option>
+                    <option value="PoliDay"></option>
+                    <option value="Pet Friendly"></option>
+                    <option value="Todos"></option>
+                </datalist>
+                </h5>
+            </section>
+
+            <section class="inputContainer">
+                <h5>Deseo Recibir informacion
+                    <input type="checkbox" name="info" checked="checked">
+                </h5>
+            </section>
+            <p>
+                <!--Boton de envio de informacion-->
+                <input type="submit" value="Enviar" class="Enviar">
+            </p>
+        </form>
+    </main>
+    <!--Lienea para dividir el contenido principal del footer-->
+    <hr class="linea">
+    <!--Pie de página-->
+    <footer class="footer">
+        <p>Todos los derechos reservados 2023. </p>
+        <p> &copy; Polibucks S.A de C.V</p>
+    </footer>
+</body>
+</html>
