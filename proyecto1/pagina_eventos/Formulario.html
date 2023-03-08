@@ -33,32 +33,32 @@
             <h2 class="title">Regístro</h2>
             <!--Secciones que agrupan los requerimientos-->
             <section class="inputContainer">
-                <h5>Nombre:</h5>
                 <!--Un input de tipo texto recibe texto-->
-                <input type="text" name="nombre" class="input" maxlength="50" required>
+                <input type="text" name="nombre" class="input" maxlength="50" required placeholder="a">
+                <p class="label">Nombre</p>
             </section>
 
             <section class="inputContainer">
-                <h5>Apellidos:</h5>
-                <input type="text" name="apellidos" class="input" maxlength="50" required>
+                <input type="text" name="apellidos" class="input" maxlength="50" required placeholder="a">
+                <p class="label">Apellidos</p>
             </section>
 
             <section class="inputContainer">
-                <h5>Sexo
+                <h4>Sexo
                     <!--Input de tipo radio  en el cula solo se puede seleccionar uno de los doa-->
                     <input type="radio" name="sexo" value="m"> Mujer
                     <input type="radio" name="sexo" value="h"> Hombre
-                </h5>
+                </h4>
             </section>
 
             <section class="inputContainer">
-                <h5>Correo</h5>
                 <!--Al ser de tipo email forzosamente debe de tener un formato de correo-->
-                <input type="email" name="correo" maxlength="50" required class="input">
+                <input type="email" name="correo" maxlength="50" required class="input" placeholder="a">
+                <p class="label">Correo</p>
             </section>
 
             <section class="inputContainer">
-                <h5>Intereses
+                <h4>Intereses
                 <!--Se crea una datalist para ello se nesecita que el input tenga el mismo nombre que la datalist-->
                 <input list="Eventos">
                 <datalist id="Eventos">
@@ -68,17 +68,17 @@
                     <option value="Pet Friendly"></option>
                     <option value="Todos"></option>
                 </datalist>
-                </h5>
+                </h4>
             </section>
 
             <section class="inputContainer">
-                <h5>Deseo Recibir informacion
+                <h4>Deseo Recibir informacion
                     <input type="checkbox" name="info" checked="checked">
-                </h5>
+                </h4>
             </section>
             <p>
                 <!--Boton de envio de informacion-->
-                <input type="submit" value="Enviar" class="Enviar">
+                <input type="submit" value="Enviar" class="submitBtn">
             </p>
         </form>
     </main>
