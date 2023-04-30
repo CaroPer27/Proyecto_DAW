@@ -46,7 +46,7 @@ h2,h3,ul,li,body,div,p,img {
     text-align: center;
     font-size: 1.5rem;
     background-color: rgb(236, 227, 238);
-    padding: 0.25em;
+    padding: 0.25px;
 }
 /*Formato navegador pagina*/
 .nav2{
@@ -80,53 +80,64 @@ a:hover{
 }
 
 /*formato main*/
-main{
-    font-size: 200%;
-    font: bold;
-    color: white;
-    background-color: rgb(241, 226, 219);
-    margin-top: 1em;
-    margin-right: 4em;
-    margin-bottom: 1em;
-    margin-left: 4em;
-    padding: 0.5em;
+@media (min-width:768px){
+    main{
+        font-size: 200%;
+        font: bold;
+        color: white;
+        background-color: rgb(241, 226, 219);
+        margin-top: 1em;
+        margin-right: 4em;
+        margin-bottom: 1em;
+        margin-left: 4em;
+        padding: 0.5em;
+    }
 }
 /*formato body*/
-body {
-    font-family: Georgia, Cambria, "Times New Roman",serif;
-    font-size: 100%;
-    background-color: rgb(241, 226, 219);
+@media (min-width:768px){
+    body {
+        font-family: Georgia, Cambria, "Times New Roman",serif;
+        font-size: 100%;
+        background-color: rgb(241, 226, 219);
+    }
 }
 /*Formato seccion ubicacion*/
 .Ubicacion{
     text-align: center;
 }
 /*Formato seccion finanzas*/
+
 .fin{
     background-color: rgb(113, 94, 102);
     text-align: center;
     font-family: 'Tilt Neon', cursive;
     font-size: 2rem;
 }
-
 .Finanzas{
     background-image: url(../images/recept.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     padding: 300px;
-    text-align: center;
-    color: black;
-    font-size: 20px;
-    font-family: 'Sono', sans-serif;
 }
+@media (min-width:768px){
+    .Finanzas{
+        text-align: center;
+        color: black;
+        font-size: 1rem;
+        font-family: 'Sono', sans-serif;
+    }
+}
+
 /*Color linea final*/
 .linea{
     color: rgb(113, 94, 102);
 }
 /*Formato footer*/
-.footer{
-    color: rgb(113, 94, 102);
-    text-align: center;
+@media (min-width:768px){
+    .footer{
+        color: rgb(113, 94, 102);
+        text-align: center;
+    }
 }
 
