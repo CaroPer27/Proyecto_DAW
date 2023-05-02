@@ -56,19 +56,20 @@ h2,h3,ul,li,body,div,p,img {
     background-color: rgb(141, 116, 125);
     padding: 0.25em;
 }
+
 /*Formato navegador todos*/
-nav ul li{
+.nav ul li{
     list-style: none;
     display: inline;
 }
 
-nav a{
+.nav a{
     padding: 0.25em;
 }
 
 a:link{
     font-weight: bold;
-    color: white;
+    color:rgb(141, 116, 125);
 }
 
 a:visited{
@@ -113,21 +114,15 @@ a:hover{
     font-family: 'Tilt Neon', cursive;
     font-size: 2rem;
 }
-.Finanzas{
-    background-image: url(../images/recept.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 300px;
+
+/*Color seccion deslizante*/
+.dropdown{
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Sono', sans-serif;
 }
-@media (min-width:768px){
-    .Finanzas{
-        text-align: center;
-        color: black;
-        font-size: 1rem;
-        font-family: 'Sono', sans-serif;
-    }
-}
+
 
 /*Color linea final*/
 .linea{
@@ -139,5 +134,179 @@ a:hover{
         color: rgb(113, 94, 102);
         text-align: center;
     }
+}
+/*Diseño menú de hamburguesa*/
+.main-header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 0.4rem;
+}
+  
+.main-logo{
+    color: black;
+    font-size:32px;
+    text-decoration:none;
+}
+  
+.main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all .2s linear;
+    background-color: rgba(0,0,0,.7);
+    z-index: 100;
+}
+  
+.main-nav.show{
+    margin-left: 0;
+}
+  
+.nav-links{
+    background-color: rgb(250,250,250);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+  
+.link-item{
+    margin-top: 2rem;
+    color: #444444;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+  
+.link-item::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s ease all;
+}
+  
+.link-item:hover::after {
+    width: 100%;
+}
+  
+.button-menu{
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+  
+.button-menu span{
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #444444;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all .2s linear;
+}
+  
+.button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ffffff;
+}
+  
+.button-menu.close span:nth-child(2){
+    transform: rotate(-45deg) translate(-8px, 5px);
+}
+  
+.button-menu.close span:nth-child(3){
+    display: none;
+}
+  
+  
+@media screen and (min-width:768px) {
+    .button-menu{
+      display: none;
+    }
+  
+    .main-logo{
+      flex-basis: 30%;
+    }
+  
+    .main-nav{
+      position: static;
+      margin-left: 0;
+      flex-basis: 70%;
+      height: 100%;
+    }
+  
+    .nav-links{
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      background: white;
+    }
+  
+    .link-item{
+      display: inline;
+      margin-top: 0;
+      margin-right: 10rem;
+    }
+}
+
+/*Seccion deslizable*/
+.hide {
+    max-height: 0 !important;
+}
+
+.dropdown .title{
+	margin: .3em .3em .3em .3em;	
+	width: 100%;
+}
+
+.dropdown .title .fa-angle-right{
+	float: right;
+	margin-right: .7em;
+	transition: transform .3s;
+}
+
+.dropdown .menu{
+	transition: max-height .5s ease-out;
+	max-height: 20em;
+	overflow: hidden;
+}
+
+.dropdown .menu .option{
+	margin: .3em .3em .3em .3em;
+	margin-top: 0.3em;
+}
+
+.dropdown .menu .option:hover{
+	background: rgba(0,0,0,0.2);
+}
+
+.pointerCursor:hover{
+	cursor: pointer;
+}
+
+.rotate-90{
+	transform: rotate(90deg);
 }
 
