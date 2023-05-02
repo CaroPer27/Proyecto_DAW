@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Script JS-->
+    <script src="AJAX.js" defer></script>
+    <script src="menu.js" defer></script>
     <!--Link icono-->
     <link rel="shortcut icon" href="images/icon.ico" type="images/icon.ico">
     <!--Estilo de imágenes-->
@@ -34,14 +37,22 @@
         </nav>
     </header>
     <!--Segunda barra de navegacion-->
-    <header>
-        <nav class="nav2">
-            <a href="#Contactanos">Contáctanos</a>
-            <a href="#unetef">Únete</a>
-            <a href="#Ubicacion">Ubicación</a>
-            <a href="#Finanzas">Finanzas</a> 
+    <header class="main-header">
+        <a class="main-logo" href="https://progradudi.netlify.app" ></a>
+        <nav id="nav" class="main-nav">
+            <div class="nav-links" >
+                <a href="#Contactanos">Contáctanos</a>
+                <a href="#unetef">Únete</a>
+                <a href="#Ubicacion">Ubicación</a>
+                <a href="#Finanzas">Finanzas</a> 
+            </div>
             <br>
-        </nav>  
+        </nav> 
+        <button id="button-menu" class="button-menu" >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>  
     </header>
 
     <main>
@@ -112,7 +123,8 @@
             </section>
             <!--Botones-->
             <p>
-            <input class="boton1" type="submit" value="Listo"> <input class="boton2" type="reset" value="Clean">
+            <input id="cargar" class="boton1" type="submit" value="Listo"> <input class="boton2" type="reset" value="Clean">
+            <p id="contenido"></p>
             </p>
         </form>
         </div>
@@ -126,17 +138,21 @@
 <br>
         <!--Seccion de finanzas-->
         <h2 class="fin">Finanzas</h2>
-       <section class="Finanzas" id="Finanzas">
-        <p> <strong> Polibucks S.A de C.V </strong><br> Cofee shop <br> Estado de resultados <br> del 1 de Enero al 31 de Diciembre del 2022</p>
-        <p>Ventas:____________________1.000.000</p>
-        <p>Costo de ventas:__________-585.800</p>
-        <p> <strong>Utilidad bruta:</strong>__________-414.200</p>
-        <p>Gastos de operacion:_____-306.750</p>
-        <p><strong>Utilidad en operacion:</strong>_____-107.450</p>
-        <p>Otros gastos:_______________-25.000</p>
-        <p><strong>Utilidad antes de impuestos:</strong>__100.710</p>
-        <p>Impuestos:____________________-55.999</p>
-        <p><strong>Utilidad neta:</strong>______________-55.769</p>
+       <section class="dropdown" id="Finanzas">
+        <div class='title pointerCursor'>Click! <i class="fa fa-angle-right"></i></div>
+        <div class='menu pointerCursor hide'>
+            <p> <strong> Polibucks S.A de C.V </strong><br> Cofee shop <br> Estado de resultados <br> del 1 de Enero al 31 de Diciembre del 2022</p>
+            <p>Ventas:____________________1.000.000</p>
+            <p>Costo de ventas:__________-585.800</p>
+            <p> <strong>Utilidad bruta:</strong>__________-414.200</p>
+            <p>Gastos de operacion:_____-306.750</p>
+            <p><strong>Utilidad en operacion:</strong>_____-107.450</p>
+            <p>Otros gastos:_______________-25.000</p>
+            <p><strong>Utilidad antes de impuestos:</strong>__100.710</p>
+            <p>Impuestos:____________________-55.999</p>
+            <p><strong>Utilidad neta:</strong>______________-55.769</p>
+            </div>
+        </div>
        </section>
     </main>
 
