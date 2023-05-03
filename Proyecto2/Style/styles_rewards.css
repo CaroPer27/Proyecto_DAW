@@ -196,3 +196,9 @@ body {
     color: #674B57;
     background-color: white;
 }
+@media (min-width:768px){
+    .footer{
+        color: rgb(113, 94, 102);
+        text-align: center;
+    }
+}
